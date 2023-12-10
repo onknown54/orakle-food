@@ -1,0 +1,52 @@
+.nav {
+  padding: 3rem 0;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // &__logo-wrap,
+  // &__btn {
+  //   flex: 0 0;
+  // }
+
+  &__btn {
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__logo {
+    fill: $grey;
+    height: 5rem;
+  }
+
+  &__nav {
+    flex: 0 0 40%;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-right: auto;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    padding: 0.6rem;
+    border-bottom: 0.45rem solid transparent;
+    transition: all 0.4s;
+
+    &:hover {
+      border-bottom: 0.45rem solid $grey;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

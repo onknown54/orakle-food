@@ -1,0 +1,13 @@
+.btn {
+  &,
+  &:link {
+    padding: 1rem 1.7rem;
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+  }
+
+  &--yellow {
+    background: $yellow;
+  }
+}

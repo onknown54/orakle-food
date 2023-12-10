@@ -1,0 +1,34 @@
+.header {
+  color: $grey;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(90deg, #f0c 0%, #339 100%);
+}
+
+.banner {
+  margin: 8% 0;
+
+  &__wrap {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__caption {
+    flex: 0 0 40%;
+
+    h2 {
+      color: #fff;
+      font-size: 6rem;
+      word-spacing: 0.8rem;
+    }
+  }
+
+  &__img-wrap {
+    flex: 1 0;
+  }
+}

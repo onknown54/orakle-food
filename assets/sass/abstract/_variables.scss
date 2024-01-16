@@ -1,7 +1,30 @@
 :root {
+  --white: #ffffff;
+  --whiteSec: #f9f5fe;
+  --whteGradient: #f9f5ff;
+  --black: #000000;
+  --blackSec: #3c3b3b;
+  --greySec: #f1e7fd;
   --grey: #dfc5e0;
   --yellow: #fca311;
+  --yellowSec: #fdbb4f;
+  --purple: #7d1cfa;
+  --purpleSec: #50139f;
+  --getStarted: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    #892efe;
+  --headerGradient: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(90deg, #f0c 0%, #339 100%);
 }
 
 $grey: var(--grey);
 $yellow: var(--yellow);
+$getStarted: var(--getStarted);
+$headerGradient: var(--headerGradient);

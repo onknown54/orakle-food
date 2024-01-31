@@ -1,16 +1,12 @@
 .nav {
-  padding: 3rem 0;
+  padding: 5rem 0 3rem;
+  overflow: hidden;
 
   &__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
-  // &__logo-wrap,
-  // &__btn {
-  //   flex: 0 0;
-  // }
 
   &__btn {
     align-self: center;

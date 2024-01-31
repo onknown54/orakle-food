@@ -5,9 +5,19 @@
     display: inline-block;
     width: fit-content;
     text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
 
-  &--yellow {
+  &-outline {
+    &-yellow {
+      border: 0.13rem solid $yellow;
+      color: $yellow;
+    }
+  }
+
+  &-yellow {
     background: $yellow;
+    color: $white;
   }
 }

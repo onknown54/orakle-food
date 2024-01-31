@@ -1,0 +1,27 @@
+.brand {
+  background-color: $greySec;
+  height: 14rem;
+  padding: 12rem 0 10rem;
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+  }
+
+  &__item {
+    width: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

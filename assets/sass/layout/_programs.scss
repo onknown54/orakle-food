@@ -1,0 +1,130 @@
+.program {
+  padding: 8rem 0;
+
+  &__header {
+    margin: 0 0 6rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-transform: capitalize;
+
+    img {
+      height: 6rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    border-radius: 1.5rem;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-top: 12.7rem;
+
+    &:hover {
+      margin-top: 0;
+
+      .program__card-item:hover {
+        box-shadow: 0 0 3rem #1d1d1d86;
+        color: $blackSec;
+        cursor: pointer;
+        background: linear-gradient(130deg, $yellowSec, $yellow);
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+
+        .program__card-footer {
+          display: block;
+        }
+
+        body {
+          background-color: pink;
+        }
+      }
+    }
+
+    &-item {
+      background: $purple;
+      padding: 4rem 3rem;
+      color: $white;
+      width: calc(100% / 4);
+      text-align: center;
+      height: 100%;
+      transition: background-image 0.4s ease-in-out, display 0.4s ease-in-out;
+    }
+
+    &-header {
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-body {
+      margin: 1.5rem 0 0;
+    }
+
+    &-footer {
+      padding: 2.7rem 0 1.5rem;
+      display: none;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &__listing {
+    &-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 5rem;
+      gap: 2rem;
+      row-gap: 5rem;
+    }
+  }
+}
+
+.best-program {
+  padding: 15rem 0 8rem;
+
+  .flex {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__caption {
+    flex: 0 1 55%;
+  }
+
+  &__img {
+    flex: 0 1 45%;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.service {
+  background: $whiteSec;
+  padding: 5rem 2rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: -2rem;
+    left: 2rem;
+    content: "";
+    background: url(../imgs/berge3.svg) no-repeat;
+    background-size: cover;
+  }
+}

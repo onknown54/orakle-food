@@ -1,7 +1,7 @@
 .brand {
   background-color: $greySec;
-  height: 14rem;
-  padding: 12rem 0 10rem;
+  min-height: 14rem;
+  padding: 10rem 0 6rem;
 
   .container {
     width: 100%;
@@ -13,10 +13,15 @@
     align-items: center;
     height: 100%;
     gap: 3rem;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__item {
-    width: 20rem;
+    flex: 0 0 15rem;
   }
 
   &__img {

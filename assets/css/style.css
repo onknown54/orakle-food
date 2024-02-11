@@ -51,8 +51,20 @@ body {
   margin: auto;
   padding: 0 4rem; }
 
+.my-2 {
+  margin: 2rem 0; }
+
 .my-3 {
   margin: 3rem 0; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.mb-6 {
+  margin-bottom: 6rem; }
 
 .text-yellow {
   color: var(--yellow); }
@@ -73,10 +85,30 @@ body {
   background: var(--yellow);
   color: var(--white); }
 
+.get-started {
+  padding: 7rem 0 10rem;
+  color: var(--white); }
+  .get-started__card {
+    height: 50rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), #892efe;
+    text-align: center;
+    padding: 5rem;
+    border: 1rem solid var(--white);
+    box-shadow: 0 0 1.5rem 1rem rgba(0, 0, 0, 0.123);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .get-started div h3 {
+    font-size: 3rem; }
+  .get-started div p {
+    width: 75%;
+    margin: 2rem auto; }
+
 .brand {
   background-color: var(--greySec);
-  height: 14rem;
-  padding: 12rem 0 10rem; }
+  min-height: 14rem;
+  padding: 10rem 0 6rem; }
   .brand .container {
     width: 100%;
     height: 100%; }
@@ -84,9 +116,12 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 3rem; }
+    gap: 3rem;
+    overflow-x: scroll; }
+    .brand__wrap::-webkit-scrollbar {
+      display: none; }
   .brand__item {
-    width: 20rem; }
+    flex: 0 0 15rem; }
   .brand__img {
     width: 100%;
     height: 100%;
@@ -157,13 +192,14 @@ body {
 .program {
   padding: 8rem 0; }
   .program__header {
-    margin: 0 0 6rem;
     display: flex;
     gap: 1rem;
     align-items: center;
     text-transform: capitalize; }
     .program__header img {
       height: 6rem; }
+    .program__header h3 {
+      font-size: 2.5rem; }
   .program__card {
     display: flex;
     border-radius: 1.5rem;
@@ -207,12 +243,12 @@ body {
   .program__listing-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 5rem;
+    margin-top: 7rem;
     gap: 2rem;
     row-gap: 5rem; }
 
 .best-program {
-  padding: 15rem 0 8rem; }
+  padding-top: 15rem; }
   .best-program .flex {
     display: flex;
     gap: 3rem;
@@ -220,6 +256,9 @@ body {
     justify-content: center; }
   .best-program__caption {
     flex: 0 1 55%; }
+    .best-program__caption p.header__caption {
+      width: 75%;
+      font-weight: 500; }
   .best-program__img {
     flex: 0 1 45%; }
     .best-program__img img {

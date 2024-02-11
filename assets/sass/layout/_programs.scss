@@ -37,10 +37,6 @@
         .program__card-footer {
           display: block;
         }
-
-        body {
-          background-color: pink;
-        }
       }
     }
 
@@ -73,7 +69,7 @@
       display: none;
 
       a {
-        color: $white;
+        color: currentColor;
       }
     }
   }
@@ -85,6 +81,9 @@
       margin-top: 7rem;
       gap: 2rem;
       row-gap: 5rem;
+      @include responsive(69.63em) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
@@ -101,6 +100,9 @@
 
   &__caption {
     flex: 0 1 55%;
+    @include responsive(69.63em) {
+      flex: 1;
+    }
 
     p.header__caption {
       width: 75%;
@@ -110,6 +112,9 @@
 
   &__img {
     flex: 0 1 45%;
+    @include responsive(69.63em) {
+      display: none;
+    }
 
     img {
       width: 100%;

@@ -1,5 +1,6 @@
 .nav {
-  padding: 3rem 0;
+  padding: 5rem 0 3rem;
+  overflow: hidden;
 
   &__wrap {
     display: flex;
@@ -7,15 +8,13 @@
     justify-content: space-between;
   }
 
-  // &__logo-wrap,
-  // &__btn {
-  //   flex: 0 0;
-  // }
-
   &__btn {
     align-self: center;
     display: flex;
     gap: 1rem;
+    @include responsive(61.56em) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -25,6 +24,9 @@
 
   &__nav {
     flex: 0 0 40%;
+    @include responsive(61.56em) {
+      display: none;
+    }
 
     ul {
       display: flex;
@@ -48,5 +50,12 @@
   &__link {
     text-decoration: none;
     color: inherit;
+  }
+
+  .mobile__nav {
+    display: none;
+    @include responsive(61.56em) {
+      display: block;
+    }
   }
 }

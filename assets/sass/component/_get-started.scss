@@ -1,0 +1,33 @@
+.get-started {
+  padding: 7rem 0 10rem;
+  color: $white;
+
+  &__card {
+    height: 50rem;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      #892efe;
+    text-align: center;
+    padding: 5rem;
+    border: 1rem solid $white;
+    box-shadow: 0 0 1.5rem 1rem rgba(0, 0, 0, 0.123);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    h3 {
+      font-size: 3rem;
+    }
+
+    p {
+      width: 75%;
+      margin: 2rem auto;
+    }
+  }
+}
